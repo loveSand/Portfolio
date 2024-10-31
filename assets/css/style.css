@@ -37,3 +37,43 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+
+/*Section styling*/
+#home {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#skills {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#skills h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#skill ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#skill li {
+    font-size: 1.1rem;
+}
