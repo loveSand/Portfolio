@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <?php include('components/header.php');?>
+    <?php include('../components/header.php');?>
 
     <main>
         <section id="skills">
@@ -24,7 +24,7 @@
         </section>
     </main>
 
-    <?php include('components/footer.php');?>
-    <script>
+    <?php include('../components/footer.php');?>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

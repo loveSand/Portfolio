@@ -77,3 +77,71 @@ nav ul li a {
 #skill li {
     font-size: 1.1rem;
 }
+
+#projects {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#projects h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.project-card a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+#about {
+    text-align: center;
+    margin-top: 50px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+#about h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+#contact {
+    text-align: center;
+    margin-top: 50px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: #333;
+}
