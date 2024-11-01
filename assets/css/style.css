@@ -146,6 +146,7 @@ nav ul li a {
     color: #333;
 }
 
+/*contact-form*/
 form {
     display: flex;
     flex-direction: column;
@@ -172,6 +173,18 @@ button:hover {
     background-color: #005f99;
 }
 
+.success {
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
 /*animation*/
 .fade-in {
     opacity: 0;
@@ -182,4 +195,20 @@ button:hover {
 .fade-in.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/*responsive*/
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .project-card {
+        width: 90%;
+    }
 }

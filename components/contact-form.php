@@ -10,9 +10,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $headers = "From: $email";
 
     if (mail($to, $subject, $body, $headers)) {
-        echo "<p>Thank you for reaching out, $name! Your message has been sent.</p>";
+        echo '<p class="success">Thank you for reaching out, $name! Your message has been sent.</p>';
     } else {
-        echo "<p>Sorry, there was an error sending your message. Please try again later.</p>";
+        echo '<p class="error">Sorry, there was an error sending your message. Please try again later.</p>';
     }
 }
 ?>
