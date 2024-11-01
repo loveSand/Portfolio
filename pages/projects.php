@@ -1,4 +1,4 @@
-<?php include '../components/header.php';?>
+<?php include ('../components/header.php');?>
 
 <section id="projects">
     <h2>Projects</h2>
@@ -12,4 +12,4 @@
 </section>
 
 
-<?php include '../components/footer.php';?>
+<?php include ('../components/footer.php');?>
