@@ -7,3 +7,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// form validation script
+const contactForm = document.querySelector("form");
+
+contactForm.addEventListener("submit", function(event) {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (!name || !emaill || !message) {
+        event.preventDefault();
+        alert("Please fill out all the fields.");
+    } else if (!/^\S+@\S+\.\S+$/.test(email)) {
+        event.preventDefault();
+        alert("Please enter a valid email address.")
+    }
+});
