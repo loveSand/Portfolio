@@ -38,7 +38,8 @@ nav ul li a {
     text-decoration: none;
 }
 
-/*Section styling*/
+/*Page styling*/
+/*home page*/
 #home {
     text-align: center;
     margin-top: 50px;
@@ -57,6 +58,7 @@ nav ul li a {
     margin: 0 auto;
 }
 
+/*skill page*/
 #skills {
     text-align: center;
     margin-top: 50px;
@@ -78,6 +80,7 @@ nav ul li a {
     font-size: 1.1rem;
 }
 
+/*project page*/
 #projects {
     text-align: center;
     margin-top: 50px;
@@ -91,9 +94,8 @@ nav ul li a {
 .project-card {
     border: 1px solid #ddd;
     padding: 20px;
-    margin: 20px auto;
-    max-width: 500px;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #fafafa;
 }
 
@@ -116,6 +118,13 @@ nav ul li a {
     text-decoration: underline;
 }
 
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/*about page*/
 #about {
     text-align: center;
     margin-top: 50px;
@@ -134,6 +143,7 @@ nav ul li a {
     margin-top: 10px;
 }
 
+/*contact page*/
 #contact {
     text-align: center;
     margin-top: 50px;
@@ -195,6 +205,13 @@ button:hover {
 .fade-in.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/*grid layout for project*/
+@media (min-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /*responsive*/

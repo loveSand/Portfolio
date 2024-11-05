@@ -8,6 +8,22 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// script for project filtering
+const categoryFilter = document.getElementsById('category-filter');
+const projectGrid = document.getElementById('project-grid');
+const projectCards = projectGrid.children;
+
+categoryFilter.addEventListener('change', (e) => {
+    const selectedCategory = e.target.value;
+    for (const project of projectCards) {
+        if (selectedCategory === 'all' || project.dataset.category === selectedCategory) {
+            project.style.display = 'block';
+        } else {
+            project.style.display = 'none';
+        }
+    }
+});
+
 // form validation script
 const contactForm = document.querySelector("form");
 
