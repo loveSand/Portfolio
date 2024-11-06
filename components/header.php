@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="icon" href="../assets/imgs/profile/sandCastle.png" type="image/x-icon">
+    <link rel="icon" href="../assets/imgs/profile/profile2.gif" type="gif">
 </head>
 <body>
 <header>

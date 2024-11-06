@@ -19,8 +19,22 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     }
 
     if (empty($errors)) {
-        header('Location:../pages/contact.php?success=1');
-        exit;
+        // Send the email
+        $to = 'Dummy.Dummy0123@gmail.com';
+        $subject = 'Contact Form Submission';
+        $message = "Name: $name \n Email: $email \n Message: $message";
+    
+        $headers = "From: $email"; // sender
+    
+        if (mail($to, $subject, $message, $headers)) {
+            header('Location:../pages/contact.php?success=1');
+            exit; // Redirect to success page
+        } else {
+            // Handle email sending error
+            $emailError = error_get_last();
+            echo "Sorry, we couldn't send your message. Please try again later. (Error: ". $emailError['message'].")";
+            exit; // Exit after displaying error message
+        }
     } else {
         // stores the error in the session
         $_SESSION['errors'] = $errors;

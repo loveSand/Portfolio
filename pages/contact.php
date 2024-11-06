@@ -1,7 +1,9 @@
-<?php include('../components/header.php');?>
+<?php 
+    session_start();
+    include('../components/header.php');
+?>
 
 <section id="contact">
-<?php session_start();?>
     <h2>Contact me</h2>
     <form action="../components/contact-form.php" method="POST">
         <input type="text" name="name" id="name" placeholder="Your name" required><br>

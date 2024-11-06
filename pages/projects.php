@@ -14,10 +14,9 @@
     <div class="project-card" data-category="web-development">
         <h3>Project 1: Portfolio Website</h3>
         <p>This simple portfolio website showcasing my skills, projects, and contact information.</p>
-        <a href="#">Live Demo</a> | <a href="#">GitHub Repo</a>
+        <a href="#">Live Demo</a> | <a href="https://Github.com/loveSand/Portfolio" target="_blank">GitHub Repo</a>
     </div>
     <!--I'll add more here later-->
 </div>
-
 
 <?php include ('../components/footer.php');?>
