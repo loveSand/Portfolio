@@ -9,34 +9,44 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // script for project filtering
+const projectCards = document.querySelectorAll('.project-card');
 const categoryFilter = document.getElementsById('category-filter');
-const projectGrid = document.getElementById('project-grid');
-const projectCards = projectGrid.children;
 
 categoryFilter.addEventListener('change', (e) => {
     const selectedCategory = e.target.value;
-    for (const project of projectCards) {
-        if (selectedCategory === 'all' || project.dataset.category === selectedCategory) {
-            project.style.display = 'block';
+    projectCards.forEach((card) => {
+        const selectedCategory = card.dataset.category;
+        if (selectedCategory === 'all' || category === selectedCategory) {
+            card.style.display = 'block';
         } else {
-            project.style.display = 'none';
+            card.style.display = 'none';
         }
-    }
+    });
 });
 
-// form validation script
-const contactForm = document.querySelector("form");
+// the form element
+const contactForm = document.querySelector('form');
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
 
-contactForm.addEventListener("submit", function(event) {
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("message").value.trim();
+contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-    if (!name || !emaill || !message) {
-        event.preventDefault();
-        alert("Please fill out all the fields.");
-    } else if (!/^\S+@\S+\.\S+$/.test(email)) {
-        event.preventDefault();
-        alert("Please enter a valid email address.")
-    }
+    // get the form element
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const message = messageInput.value.trim();
+
+    // send the data to contact-form.php
+    fetch(contact-form.php, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: `name=${name}&email=${email}&message${message}`,
+    })
+    .then((Response) => Response.text())
+    .then((message) => console.log(message))
+    .catch((error) => console.log(error));
 });
