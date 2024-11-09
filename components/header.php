@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="icon" href="../assets/imgs/profile/profile2.gif" type="gif">
+    <link rel="stylesheet" href="../assets/css/style.scss">
+    <link rel="icon" href="/assets/imgs/profile/profile1.gif">
 </head>
 <body>
 <header>

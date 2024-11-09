@@ -3,8 +3,8 @@
 </header>
     
 <section id="about">
-    <h1>Welcome to My Portfolio</h1>
-    <p>This is the about page.</p>
+    <h2 class="font-subheader">About me</h1>
+    <p class="font-body">This is the about page.</p>
 </section>
 
 <footer>

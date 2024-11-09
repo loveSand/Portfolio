@@ -4,7 +4,7 @@
 </header>
 
 <section id="contact">
-    <h2>Contact me</h2>
+    <h2 class="font-subheader">Contact me</h2>
     <form action="../components/contact-form.php" method="POST">
         <input type="text" name="name" id="name" placeholder="Your name" required><br>
         <input type="text" name="email" id="email" placeholder="Your email" required><br>
@@ -21,7 +21,7 @@
         <?php endif;?>
         <?php if (isset($_GET['success'])) :?>
         <div class="success-message">
-            <p>Thank you for your message! We'll get back to you soon.</p>
+            <p class="font-body">Thank you for your message! We'll get back to you soon.</p>
         </div>
     <?php endif;?>
     </form>
