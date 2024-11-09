@@ -3,7 +3,7 @@
     <?php include('../components/header.php'); ?>
 </header>
 
-<section id="contact">
+<section id="contact" class="section-margin">
     <h2 class="font-subheader">Contact me</h2>
     <form action="../components/contact-form.php" method="POST">
         <input type="text" name="name" id="name" placeholder="Your name" required><br>
