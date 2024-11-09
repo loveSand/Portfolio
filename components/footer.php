@@ -1,4 +1,6 @@
 </main>
-<script src="../assets/js/main.js"></script>
+<footer>
+    <script src="../assets/js/main.js"></script>
+</footer>
 </body>
 </html>
