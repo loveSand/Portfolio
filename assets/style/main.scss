@@ -1,15 +1,17 @@
-@import '__imports__/typography';
-@import '__imports__/media.scss';
-@import '__imports__/variables';
+@import '__imports__/base/variables';
+@import '__imports__/base/typography';
+@import '__imports__/base/media.scss';
 
-// Components and Pages
-@import '__imports__/header';
-@import '__imports__/home';
-@import '__imports__/skills';
-@import '__imports__/projects';
-@import '__imports__/about';
-@import '__imports__/contact';
-@import '__imports__/footer';
+// Components
+@import '__imports__/components/header';
+@import '__imports__/components/footer';
+
+// Pages
+@import '__imports__/pages/home';
+@import '__imports__/pages/skills';
+@import '__imports__/pages/projects';
+@import '__imports__/pages/about';
+@import '__imports__/pages/contact';
 
 body {
     font-family: $font-family;
@@ -18,3 +20,4 @@ body {
     line-height: 1.6;
     background-color: $background-color;
 }
+
