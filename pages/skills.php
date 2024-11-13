@@ -1,6 +1,4 @@
-<header>
-    <?php include('../components/header.php');?>
-</header>
+<?php include('../components/header.php');?>
 
 <section id="skills">
     <h2 class="font-subheader">Skills</h2>
@@ -15,6 +13,4 @@
     </ul>
 </section>
 
-<footer>
-    <?php include('../components/footer.php');?>
-</footer>
+<?php include('../components/footer.php');?>

@@ -1,0 +1,20 @@
+@import '__imports__/typography';
+@import '__imports__/media.scss';
+@import '__imports__/variables';
+
+// Components and Pages
+@import '__imports__/header';
+@import '__imports__/home';
+@import '__imports__/skills';
+@import '__imports__/projects';
+@import '__imports__/about';
+@import '__imports__/contact';
+@import '__imports__/footer';
+
+body {
+    font-family: $font-family;
+    font-size: $font-size-base;
+    color: $text-color;
+    line-height: 1.6;
+    background-color: $background-color;
+}

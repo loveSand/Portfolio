@@ -1,7 +1,4 @@
-<?php session_start(); ?>
-<header>
-    <?php include('../components/header.php'); ?>
-</header>
+<?php include('../components/header.php'); ?>
 
 <section id="contact" class="section-margin">
     <h2 class="font-subheader">Contact me</h2>
@@ -31,7 +28,4 @@
     unset($_SESSION['errors']);
     session_write_close();
 ?>
-<footer>
 <?php include('../components/footer.php');?>
-</footer>
-

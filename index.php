@@ -1,11 +1,7 @@
-<header>
-    <?php include ('components/header.php');?>
-</header>
+<?php include ('components/header.php');?>
 
 <main>
     <?php include ('pages/home.php');?>
 </main>
 
-<footer>
-    <?php include ('components/footer.php');?>
-</footer>
+<?php include ('components/footer.php');?>

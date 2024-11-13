@@ -1,6 +1,4 @@
-<header>    
-    <?php include ('../components/header.php');?>
-</header>
+ <?php include ('../components/header.php');?>
 
 <section id="filter-container" class="section-margin">
     <label for="category-filter">Filter by Category:</label>
@@ -21,6 +19,4 @@
     <!--I'll add more here later-->
 </section>
 
-<footer>
-    <?php include ('../components/footer.php');?>
-</footer>
+<?php include ('../components/footer.php');?>
