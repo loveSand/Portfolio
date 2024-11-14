@@ -1,0 +1,17 @@
+$font-family: 'Roboto', san-serif;
+$font-size-small: 14px;
+$font-size-base: 16px;
+$font-size-large: 24px;
+
+.font-body {
+    font-size: $font-size-base;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

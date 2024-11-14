@@ -1,7 +1,23 @@
-<?php include ('components/header.php');?>
+<?php include 'components/header.php';
 
-<main>
-    <?php include ('pages/home.php');?>
-</main>
+$page = isset($_GET['page']) ? $_GET['page'] : 'home';
 
-<?php include ('components/footer.php');?>
+switch ($page) {
+    case 'skills':
+        include 'pages/skills.php';
+        break;
+    case 'projects':
+        include 'pages/projects.php';
+        break;
+    case 'about':
+        include 'pages/about.php';
+        break;
+    case 'contact':
+        include 'pages/contact.php';
+        break;
+    default:
+        include 'pages/home.php';
+        break;
+}
+
+include 'components/footer.php'; ?>
