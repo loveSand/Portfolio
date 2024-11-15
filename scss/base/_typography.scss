@@ -3,6 +3,18 @@ $font-size-small: 14px;
 $font-size-base: 16px;
 $font-size-large: 24px;
 
+h1, h2, h3, h4, h5, h6 {
+    color: $primary-color;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+    &:hover {
+        color: darken($link-color, 10%);
+    }
+}
+
 .font-body {
     font-size: $font-size-base;
 }

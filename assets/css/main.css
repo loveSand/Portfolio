@@ -1,3 +1,15 @@
+h1, h2, h3, h4, h5, h6 {
+  color: #3498db;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+}
+
 .font-body {
   font-size: 16px;
 }
@@ -278,18 +290,6 @@ body {
   color: #333;
   line-height: 1.6;
   background-color: #f4f4f4;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #3498db;
-}
-
-a {
-  color: #3498db;
-  text-decoration: none;
-}
-a:hover {
-  color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
 }
 
 /*# sourceMappingURL=main.css.map */
