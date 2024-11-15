@@ -1,18 +1,11 @@
-<section id="filter-container" class="section-margin">
-    <label for="category-filter">Filter by Category:</label>
-    <select name="category-filter" id="category-filter">
-        <option value="all">All</option>
-        <option value="webDevelopment">Web Development</option>
-        <option value="design">Design</option>
-        <option value="miscellaneous">Miscellaneous</option>
-    </select>
-</section>
-
-<section id="project-grid" class="container">
-    <div class="project-card grid" data-category="webDevelopment">
-        <h3 class="font-subheader">Project 1: Portfolio Website</h3>
-        <p class="font-body">This simple portfolio website showcasing my skills, projects, and contact information.</p>
-        <a href="#">Live Demo</a> | <a href="https://Github.com/loveSand/Portfolio" target="_blank">GitHub Repo</a>
+<section class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Portflio</h3>
+            <p>A simple project that shows some of my skills</p>
+            <a href="#" class="button">View Projects</a> |
+            <a href="" class="button">GitHub Repos</a>
+        </div>
     </div>
-    <!--I'll add more here later-->
 </section>

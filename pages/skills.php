@@ -1,16 +1,29 @@
-<?php include('../components/header.php');?>
-
-<section id="skills" class="container">
-    <h2 class="font-subheader">Skills</h2>
-    <p class="font-body">This is the skills page.</p>
-    <ul>
-        <li class="font-body grid">HTML&CSS - Beginner</li>
-        <li class="font-body grid">JavaScript - Beginner</li>
-        <li class="font-body grid">Python - Beginner</li>
-        <li class="font-body grid">PHP - Beginner</li>
-        <li class="font-body grid">MySQL - Beginner</li>
-        <li class="font-body grid">Git - Beginner</li>
-    </ul>
+<section class="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="class-category">
+            <h3>Front-End</h3>
+            <ul>
+                <li>HTML & CSS</li>
+                <li>SASS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+        <div class="class-category">
+            <h3>Back-End</h3>
+            <ul>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>Laravel</li>
+            </ul>
+        </div>
+        <div class="class-category">
+            <h3>Other Tools</h3>
+            <ul>
+                <li>Git & GitHub</li>
+                <li>Composer</li>
+                <li>Apache & MySQL</li>
+            </ul>
+        </div>
+    </div>
 </section>
-
-<?php include('../components/footer.php');?>

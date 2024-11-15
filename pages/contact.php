@@ -1,5 +1,3 @@
-<?php include('../components/header.php'); ?>
-
 <section id="contact" class="section-margin">
     <h2 class="font-subheader">Contact me</h2>
     <form action="../components/contact-form.php" method="POST">
@@ -28,4 +26,3 @@
     unset($_SESSION['errors']);
     session_write_close();
 ?>
-<?php include('../components/footer.php');?>

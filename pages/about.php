@@ -1,8 +1,4 @@
-<?php include('../components/header.php');?>
-
-<section id="about" class="section-margin">
-    <h2 class="font-subheader">About me</h2>
-    <p class="font-body">This is the about page.</p>
+<section class="about-me">
+    <h2>About Me</h2>
+    <p>With a passion for Coding and Creativity, I will bring ideas to life through clean, modern web design and efficient back-end solution.</p>
 </section>
-
-<?php include('../components/footer.php');?>

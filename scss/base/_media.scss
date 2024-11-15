@@ -42,3 +42,33 @@ header {
         font-size: 1.2rem;
     }
 }
+
+// pages/home.scss
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .about-me h2 {
+        font-size: 1.8rem;
+    }
+}
+
+// pages/skills.scss
+@media (max-width: 768px) {
+    .skills h2 {
+        font-size: 1.8rem;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+// pages/projects.scss
+@media (max-width: 768px) {
+    .projects h2 {
+        font-size: 1.8rem;
+    }
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}

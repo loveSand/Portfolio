@@ -1,18 +1,21 @@
 // base
-@import '__imports__/base/variables';
-@import '__imports__/base/typography';
-@import '__imports__/base/media.scss';
+@import 'base/variables';
+@import 'base/typography';
+@import 'base/media.scss';
 
 // Components
-@import '__imports__/components/header';
-@import '__imports__/components/footer';
+@import 'components/header';
+@import 'components/footer';
+
+// mixins
+@import 'mixins/mixins';
 
 // Pages
-@import '__imports__/pages/home';
-@import '__imports__/pages/skills';
-@import '__imports__/pages/projects';
-@import '__imports__/pages/about';
-@import '__imports__/pages/contact';
+@import 'pages/home';
+@import 'pages/skills';
+@import 'pages/projects';
+@import 'pages/about';
+@import 'pages/contact';
 
 body {
     font-family: $font-family;

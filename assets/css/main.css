@@ -11,6 +11,12 @@
   padding: 0 20px;
 }
 
+.active {
+  color: #2ecc71;
+  font-weight: bold;
+  border-bottom: 2px solid #2ecc71;
+}
+
 @media (min-width: 768px) {
   header nav ul {
     display: flex;
@@ -58,6 +64,30 @@
   }
 }
 
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .about-me h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .skills h2 {
+    font-size: 1.8rem;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .projects h2 {
+    font-size: 1.8rem;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
 header {
   background-color: #3498db;
   padding: 20px;
@@ -65,8 +95,12 @@ header {
 }
 header nav ul {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 header nav ul li {
   margin: 0 15px;
@@ -74,9 +108,168 @@ header nav ul li {
 header nav ul li a {
   color: #fff;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 header nav ul li a:hover {
   color: rgb(138.6359832636, 195.9581589958, 234.3640167364);
+}
+
+nav a.active {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover {
+  color: rgb(126.072, 225.928, 168.416);
+}
+
+.hero {
+  background: url(../../assets/images/background/LoneHero.gif);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.hero .hero-content {
+  max-width: 600px;
+  padding: 20px;
+}
+.hero .hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.hero .hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+.hero .hero-content .hero-btn {
+  background-color: #3498db;
+  color: 50%;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.hero .hero-content .hero-btn:hover {
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+}
+
+.skills {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+.skills h2 {
+  text-align: center;
+  color: #3498db;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.skills .skill-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.skills .skill-category {
+  background-color: rgb(246.9309623431, 250.9058577406, 253.5690376569);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.skills .skill-category h3 {
+  font-size: 1.5rem;
+  color: #2ecc71;
+  margin-bottom: 10px;
+}
+.skills .skill-category ul {
+  list-style-type: none;
+  padding: 0;
+}
+.skills .skill-category ul li {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+.projects {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+}
+.projects h2 {
+  text-align: center;
+  color: #3498db;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.projects .project-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.projects project-card {
+  background-color: rgb(230.112, 249.388, 238.286);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0);
+  text-align: center;
+}
+.projects project-card h3 {
+  font-size: 1.5rem;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+.projects project-card p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+.projects project-card .button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 5px;
+  font-size: 0.9rem;
+}
+.projects project-card .button:hover {
+  background-color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+}
+
+.about-me {
+  padding: 50px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+.about-me h2 {
+  color: #3498db;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.about-me p {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 body {
@@ -99,4 +292,4 @@ a:hover {
   color: rgb(33.1380753138, 125.1882845188, 186.8619246862);
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

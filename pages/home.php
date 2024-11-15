@@ -1,8 +1,9 @@
 <main class="home">
-<section class="hero">
-    <img src="../assets/images/profile/profile13.gif" alt="Profile">
-    <h1 class="">Welcome to My Portfolio</h1>
-    <p class="font-body">This is the home page.</p>
-    <a href="?page=projects" class="btn-primary">View Projects</a>
-</section>
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Welcome to my Portfolio</h1>
+            <p>Hi, I'm jonas, a beginner web developer</p>
+            <a href="index.php?page=projects" class="hero-btn">My Work</a>
+        </div>
+    </div>
 </main>
