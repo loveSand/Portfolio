@@ -5,23 +5,21 @@ const clean = require('gulp-clean');
 const notify = require('gulp-notify');
 
 gulp.task('sass', function() {
-    return gulp.src('.scss/main.scss')
+    return gulp.src('root/scss/main.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest('./scss/'));
+    .pipe(gulp.dest('assets/css'))
+    .pipe(notify({ message: 'Sass file Compiled!', onLast: true }));
 });
 
 gulp.task('watch', function() {
-    gulp.watch('.scss/**/*.scss', gulp.series('sass'))
-    .pipe(notify('Sass file compiled!'));
+    gulp.watch('root/scss/**/*.scss', gulp.series('sass'))
 })
 
 gulp.task('clear-cache', function() {
-    return gulp.src('.scss/**/*.scss')
-    .pipe(sass({ cacheClear: true}))
-    .pipe(clean())
-    .pipe(gulp.dest('.'));
+    return gulp.src('assets/css/*.scss', { read: false })
+    .pipe(clean());
 });
 
 gulp.task('default', gulp.series('sass', 'watch'));

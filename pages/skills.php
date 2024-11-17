@@ -1,6 +1,6 @@
 <section class="skills">
     <h2>Skills</h2>
-    <div class="skills-grid">
+    <div class="skill-grid">
         <div class="class-category">
             <h3>Front-End</h3>
             <ul>
